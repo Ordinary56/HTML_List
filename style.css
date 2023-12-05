@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+h1 {
+    text-align: center;
+    margin: 20px;
+}
+.active {
+    color: white;
+
+    list-style-image: url("nyil.png");
+    list-style-image: none;
+    font-size: 1.4em;
+    font-weight: bold;
+    background-color: #252525;
+    &::before {
+        content: '✅' ;
+    }
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 10px;
+    text-align: center;
+}
+
+li {
+    list-style-type: none;
+    border: 1px solid black;
+    border-radius: 15px;
+    width: 40%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &:hover {
+        cursor: pointer;
+    }
+}
